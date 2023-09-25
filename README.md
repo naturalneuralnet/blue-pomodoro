@@ -2,7 +2,7 @@
 
 A Promodo timer. Promodo is one of my favourite focus methods for studying and coding. I've found many Promodo timers on the internet and wanted to make my own version. I chose the deep blue color and ocean waves as they are soothing to the eye and you definetly want to be in the best state of mind when you start Promodo!
 
-![Alt text](\src\assets\screenshot.png)
+![Alt text](/src/assets/screenshot.png)
 
 # Table of Contents
 
