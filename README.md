@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# About
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Promodo timer. Promodo is one of my favourite focus methods for studying and coding. I've found many Promodo timers on the internet and wanted to make my own version. I chose the deep blue color and ocean waves as they are soothing to the eye and you definetly want to be in the best state of mind when you start Promodo!
 
-## Available Scripts
+![Alt text](src/assets/screenshot.png)
 
-In the project directory, you can run:
+# Table of Contents
 
-### `npm start`
+- [Local Setup](#local-setup)
+- [Technologies Used](#technologies-used)
+- [What I learned](#what-i-learned)
+- [Credits](#credits)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Local Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Download or clone from github.
+Install dependencies using npm install
 
-### `npm test`
+`npm install`
+Change the port to localhost
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Run locally with npm run start
 
-### `npm run build`
+`npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React
+- React-Redux
+- Redux-Toolkit
+- Material UI
+- CSS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This is React project, with Material UI and some CSS for styling.
 
-### `npm run eject`
+Initially I created the project to run with local state using the useState hook.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Then I converted the local state to a global state using React-Redux and Redux-Toolkit.The previous version of the Promodo component can be found in PromodoWithoutRedux
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## What I learned
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- How to add a video as the background
+- How to optimize the video
+- Simple button animation using CSS
+- State management using Slices with React-Redux and Redux-Toolkit
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Resources Used:
 
-## Learn More
+- This article on optimizing video backgrounds by [Logrocket](https://blog.logrocket.com/optimizing-video-backgrounds-css-javascript/#making-video-backgrounds-responsive)
+- This article on CSS animation by [W3Schools](https://www.w3schools.com/howto/howto_css_animate_buttons.asp)
+- The Redux Toolkit Quick Start [Tutorial](https://redux-toolkit.js.org/tutorials/quick-start)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Credits
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Video from pixelbay free for personal use license
 
-### Code Splitting
+Wine Sea video by [Rostislav Uzunov](https://pixabay.com/users/rostislavuzunov-8621397/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=71122) from [Pixabay](https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=71122)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Sounds from pixelbay free for personal use license
 
-### Analyzing the Bundle Size
+Mech Keyboard Sound Effect from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=102918)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Ding Sound Effect from [Pixabay](https://pixabay.com/sound-effects/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=47489)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Icon from [Flaticon](https://www.flaticon.com/free-icons/sand)
