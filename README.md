@@ -10,6 +10,7 @@ A Promodo timer. Promodo is one of my favourite focus methods for studying and c
 - [Technologies Used](#technologies-used)
 - [What I learned](#what-i-learned)
 - [Credits](#credits)
+- [License](#license)
 
 ## Local Setup
 
@@ -63,3 +64,9 @@ Mech Keyboard Sound Effect from [Pixabay](https://pixabay.com/?utm_source=link-a
 Ding Sound Effect from [Pixabay](https://pixabay.com/sound-effects/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=47489)
 
 Icon from [Flaticon](https://www.flaticon.com/free-icons/sand)
+
+## License
+
+You can find the License for this project [here](#LICENSE.md)
+
+This project is licensed under the terms of the MIT license.
