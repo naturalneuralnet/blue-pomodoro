@@ -7,7 +7,7 @@ import ding from "./assets/ding.mp3";
 
 const timerLength = { pomo: 25, short: 5, long: 15 };
 const finishedAudio = new Audio(ding);
-const PromodoWithoutRedux = () => {
+const PomodoroWithoutRedux = () => {
   const [secondsLeft, setSecondsLeft] = useState(25 * 60);
   const [isTimerOn, setisTimerOn] = useState(false);
   const [timerMode, setTimerMode] = useState("POMODORO");
@@ -266,4 +266,4 @@ const PromodoWithoutRedux = () => {
   );
 };
 
-export default PromodoWithoutRedux;
+export default PomodoroWithoutRedux;

@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { promodoReducer } from "./PromodoSlice";
+import { pomodoroReducer } from "./PomodoroSlice";
 
 const store = configureStore({
   reducer: {
-    promodo: promodoReducer,
+    pomodoro: pomodoroReducer,
   },
 });
 

@@ -15,11 +15,11 @@ import {
   pauseTimer,
   startTimer,
   countDown,
-} from "./PromodoSlice";
+} from "./PomodoroSlice";
 
 let finishedAudio = new Audio(ding);
 
-const Promodo = () => {
+const Pomodoro = () => {
   const dispatch = useDispatch();
 
   const [pomoColor, setPomoColor] = useState(true);
@@ -37,7 +37,6 @@ const Promodo = () => {
 
   // changes the state of the timer based on which button is clicked
   const handleControls = (e) => {
-    /// get the inner text and pass to change timer mode
     audio1.play();
     const mode = String(e.target.innerText);
     dispatch(resetSecondsLeft(mode));
@@ -51,7 +50,6 @@ const Promodo = () => {
       timerText === "resume" ||
       timerText === "restart"
     ) {
-      // this action could take the start time
       dispatch(startTimer());
     } else if (timerText === "pause") {
       dispatch(pauseTimer());
@@ -59,7 +57,6 @@ const Promodo = () => {
 
     if (secondsLeft === 0) {
       finishedAudio.play();
-      console.log("Inside handleClick");
       dispatch(timesUp());
     }
   };
@@ -84,14 +81,14 @@ const Promodo = () => {
   useEffect(() => {
     let tick;
     if (isTimerOn) {
-      // dispatches the countodwn to tick down with an interval of every second
+      // dispatches the countdown to tick down with an interval of a second
 
       tick = setInterval(() => {
         dispatch(countDown());
       }, 1000);
     }
 
-    // this changes the color of the button depending on which mode the timer is in
+    // changes the color of the button depending on which mode the timer is in
     if (timerMode === "POMODORO") {
       setPomoColor(true);
       setShortColor(false);
@@ -242,4 +239,4 @@ const Promodo = () => {
   );
 };
 
-export default Promodo;
+export default Pomodoro;

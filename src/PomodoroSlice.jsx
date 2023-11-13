@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const promodoSlice = createSlice({
-  name: "promo",
+const pomodoroSlice = createSlice({
+  name: "pomo",
   initialState: {
     timerLength: { pomo: 25, long: 15, short: 5 },
     secondsLeft: 20 * 60,
@@ -10,13 +10,6 @@ const promodoSlice = createSlice({
     timerText: "start",
   },
   reducers: {
-    /// think i can get rid of this and just use reset seconds left
-    // changeTimerMode: (state, action) => {
-    //   state.timerMode = action.payload;
-    //   /// should it really be start all the time?
-    //   state.timerText = "start";
-    // },
-
     countDown: (state) => {
       state.secondsLeft -= 1;
     },
@@ -60,10 +53,11 @@ export const {
   pauseTimer,
   startTimer,
   countDown,
-} = promodoSlice.actions;
+} = pomodoroSlice.actions;
 
-/// exports the entire timer state so you dont have to useSelect every little bit of state
-/// exports the state to the store, the name in the store must match this
-export const selectPromodo = (state) => state.promodo;
-/// export reducer
-export const promodoReducer = promodoSlice.reducer;
+/// exports timer state so it's easier to select.
+/// ensure the name is correct i.e. matching the state named in the store
+
+export const selectPromodo = (state) => state.pomodoro;
+
+export const pomodoroReducer = pomodoroSlice.reducer;

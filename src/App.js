@@ -1,6 +1,6 @@
 import "./App.css";
 //import PromodoWihtoutRedux from "./PromodoWithoutRedux";
-import Promodo from "./Promodo";
+import Pomodoro from "./Pomodoro";
 import { Box } from "@mui/material";
 
 import wine_sea from "./assets/wine_sea.mp4";
@@ -58,7 +58,7 @@ function App() {
           backgroundColor: "transparent",
         }}
       >
-        <Promodo></Promodo>
+        <Pomodoro></Pomodoro>
       </Box>
     </div>
   );

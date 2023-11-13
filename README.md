@@ -1,6 +1,6 @@
 # About
 
-A Pomodoro timer. Yes, another one.
+A Pomodoro timer. 
 
 Pomodoro is one of my favourite focus methods for studying and coding. I've found many Pomodoro timers on the internet and wanted to make my own version.
 
