@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 
 import wine_sea from "./assets/wine_sea.mp4";
 function App() {
-  document.title = "Promodoro";
+  document.title = "Pomodoro";
 
   // change the icon
 
