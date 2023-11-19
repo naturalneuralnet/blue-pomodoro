@@ -7,11 +7,6 @@ import wine_sea from "./assets/wine_sea.mp4";
 function App() {
   document.title = "Pomodoro";
 
-  // change the icon, must be an icon in assets
-
-  const link = document.querySelector('link[rel="icon"]');
-  link.setAttribute("href", "./assets/sand-timer.ico");
-
   // pauses the video when window is not in view
   // courtesy of LogRocket :https://blog.logrocket.com/optimizing-video-backgrounds-css-javascript/#making-video-backgrounds-responsive
   let options = {
